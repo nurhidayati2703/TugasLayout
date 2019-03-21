@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/sarapan"
+            android:layout_width="190dp"
+            android:layout_height="180dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:foregroundGravity="center"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/bf" />
+
+            <Button
+                android:id="@+id/btnbreakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="BREAKFAST" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="194dp"
+            android:layout_height="178dp"
+            android:layout_toRightOf="@+id/sarapan">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/lunch" />
+
+            <Button
+                android:id="@+id/btnlunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="LUNCH" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="100dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/minum"
+            android:layout_width="190dp"
+            android:layout_height="180dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/drink" />
+
+            <Button
+                android:id="@+id/btndrink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="DRINK" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="194dp"
+            android:layout_height="181dp"
+            android:layout_toRightOf="@+id/minum">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/dessert" />
+
+            <Button
+                android:id="@+id/btndessert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="DESSERT" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
